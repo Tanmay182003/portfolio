@@ -1,30 +1,5 @@
 'use strict';
 
-// Custom Cursor
-const cursor = document.createElement('div');
-cursor.className = 'custom-cursor';
-document.body.appendChild(cursor);
-
-document.addEventListener('mousemove', (e) => {
-  cursor.style.left = e.clientX + 'px';
-  cursor.style.top = e.clientY + 'px';
-});
-
-document.addEventListener('mouseenter', () => {
-  cursor.style.opacity = '1';
-});
-
-document.addEventListener('mouseleave', () => {
-  cursor.style.opacity = '0';
-});
-
-// Add hover effect to interactive elements
-const interactiveElements = document.querySelectorAll('a, button, .navbar-link, .project-item, .stat-card');
-interactiveElements.forEach(el => {
-  el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-  el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-});
-
 // Typing Animation
 class TypingAnimation {
   constructor(element) {

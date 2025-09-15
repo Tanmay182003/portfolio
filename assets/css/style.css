@@ -1885,30 +1885,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   #CUSTOM FEATURES
 \*-----------------------------------*/
 
-/* Custom Cursor */
-* {
-  cursor: none;
-}
-
-.custom-cursor {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  background: var(--orange-yellow-crayola);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transition: transform 0.1s ease;
-  opacity: 1;
-  box-shadow: 0 0 10px var(--orange-yellow-crayola);
-}
-
-.custom-cursor.hover {
-  transform: scale(1.5);
-  background: var(--white-2);
-  box-shadow: 0 0 15px var(--white-2);
-}
-
 /* Typing Animation */
 .typing-text {
   color: var(--orange-yellow-crayola);
