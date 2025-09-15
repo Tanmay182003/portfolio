@@ -1899,12 +1899,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   pointer-events: none;
   z-index: 9999;
   transition: transform 0.1s ease;
-  mix-blend-mode: difference;
+  opacity: 1;
+  box-shadow: 0 0 10px var(--orange-yellow-crayola);
 }
 
 .custom-cursor.hover {
   transform: scale(1.5);
   background: var(--white-2);
+  box-shadow: 0 0 15px var(--white-2);
 }
 
 /* Typing Animation */

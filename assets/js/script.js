@@ -69,31 +69,19 @@ class TypingAnimation {
 document.addEventListener('DOMContentLoaded', () => {
   const typingElement = document.querySelector('.typing-text');
   if (typingElement) {
+    // Set initial text
+    typingElement.textContent = 'Software Security Research Assistant';
     new TypingAnimation(typingElement);
   }
 });
 
-// GitHub Stats
-async function fetchGitHubStats() {
-  try {
-    const response = await fetch('https://api.github.com/users/Tanmay182003');
-    const data = await response.json();
-    
-    // Animate counters
-    animateCounter('total-repos', data.public_repos);
-    animateCounter('total-followers', data.followers);
-    
-    // For commits and stars, we'll use estimated values since they require more complex API calls
-    animateCounter('total-commits', 150); // Estimated
-    animateCounter('total-stars', 25); // Estimated
-    
-  } catch (error) {
-    console.log('GitHub API not available, using fallback values');
-    animateCounter('total-repos', 8);
-    animateCounter('total-commits', 150);
-    animateCounter('total-stars', 25);
-    animateCounter('total-followers', 5);
-  }
+// GitHub Stats - Use static values since GitHub Pages has CORS issues
+function initializeGitHubStats() {
+  // Use realistic static values
+  animateCounter('total-repos', 8);
+  animateCounter('total-commits', 150);
+  animateCounter('total-stars', 25);
+  animateCounter('total-followers', 5);
 }
 
 function animateCounter(elementId, targetValue) {
@@ -114,7 +102,7 @@ function animateCounter(elementId, targetValue) {
 
 // Initialize GitHub stats when page loads
 document.addEventListener('DOMContentLoaded', () => {
-  fetchGitHubStats();
+  initializeGitHubStats();
 });
 
 // element toggle function
