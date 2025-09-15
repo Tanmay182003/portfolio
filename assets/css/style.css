@@ -1956,6 +1956,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--light-gray-70);
   font-size: var(--fs-7);
   text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.stat-subtitle {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .github-link {

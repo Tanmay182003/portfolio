@@ -50,44 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Professional Achievements - Display static values
-function initializeProfessionalAchievements() {
-  // Set static values directly (no animation needed for achievements)
-  const achievements = {
-    'total-repos': '4.0',
-    'total-commits': '3',
-    'total-stars': '4',
-    'total-followers': '4'
-  };
-  
-  Object.entries(achievements).forEach(([elementId, value]) => {
-    const element = document.getElementById(elementId);
-    if (element) {
-      element.textContent = value;
-    }
-  });
-}
-
-function animateCounter(elementId, targetValue) {
-  const element = document.getElementById(elementId);
-  if (!element) return;
-  
-  let currentValue = 0;
-  const increment = targetValue / 50;
-  const timer = setInterval(() => {
-    currentValue += increment;
-    if (currentValue >= targetValue) {
-      currentValue = targetValue;
-      clearInterval(timer);
-    }
-    element.textContent = Math.floor(currentValue);
-  }, 30);
-}
-
-// Initialize professional achievements when page loads
-document.addEventListener('DOMContentLoaded', () => {
-  initializeProfessionalAchievements();
-});
+// Professional Achievements - Static values (no JavaScript needed)
+// Values are now hardcoded in HTML for better performance and reliability
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
