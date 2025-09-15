@@ -140,12 +140,21 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
+console.log("Navigation links found:", navigationLinks.length);
+console.log("Pages found:", pages.length);
+
+// Test if buttons are clickable at all
 for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+  console.log("Setting up click handler for:", navigationLinks[i].innerHTML);
+  navigationLinks[i].addEventListener("click", function (e) {
+    e.preventDefault();
+    console.log("Navigation clicked:", this.innerHTML);
+    console.log("Available pages:", pages.length);
 
     for (let j = 0; j < pages.length; j++) {
+      console.log("Checking page:", pages[j].dataset.page, "against:", this.innerHTML.toLowerCase().trim());
       if (this.innerHTML.toLowerCase().trim() === pages[j].dataset.page.toLowerCase()) {
+        console.log("Match found! Activating page:", pages[j].dataset.page);
         pages[j].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
