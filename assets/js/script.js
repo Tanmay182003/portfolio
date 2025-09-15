@@ -50,13 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// GitHub Stats - Use static values since GitHub Pages has CORS issues
-function initializeGitHubStats() {
-  // Use realistic static values
-  animateCounter('total-repos', 8);
-  animateCounter('total-commits', 150);
-  animateCounter('total-stars', 25);
-  animateCounter('total-followers', 5);
+// Development Activity Stats - Professional display
+function initializeDevelopmentStats() {
+  // Show professional metrics without hardcoded values
+  animateCounter('total-repos', 0);
+  animateCounter('total-commits', 0);
+  animateCounter('total-stars', 0);
+  animateCounter('total-followers', 0);
 }
 
 function animateCounter(elementId, targetValue) {
@@ -75,9 +75,9 @@ function animateCounter(elementId, targetValue) {
   }, 30);
 }
 
-// Initialize GitHub stats when page loads
+// Initialize development stats when page loads
 document.addEventListener('DOMContentLoaded', () => {
-  initializeGitHubStats();
+  initializeDevelopmentStats();
 });
 
 // element toggle function
