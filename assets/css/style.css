@@ -155,7 +155,19 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body { 
+  background: var(--smoky-black);
+  cursor: default !important;
+}
+
+/* Fix cursor for interactive elements */
+button, a, input, textarea, select {
+  cursor: pointer !important;
+}
+
+button:hover, a:hover {
+  cursor: pointer !important;
+}
 
 
 
@@ -1968,6 +1980,93 @@ textarea.form-input::-webkit-resizer { display: none; }
   box-shadow: var(--shadow-2);
 }
 
+/* Publications List View */
+.publications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publication-item {
+  background: var(--border-gradient-onyx);
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-4);
+  transition: transform var(--transition-1);
+}
+
+.publication-item:hover {
+  transform: translateY(-3px);
+}
+
+.publication-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.publication-venue {
+  background: var(--orange-yellow-crayola);
+  color: var(--eerie-black-1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+}
+
+.publication-year {
+  background: var(--bg-gradient-yellow-2);
+  color: var(--white-2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+}
+
+.publication-citations {
+  background: var(--jet);
+  color: var(--light-gray-70);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-400);
+}
+
+.publication-title {
+  margin-bottom: 10px;
+}
+
+.publication-title a {
+  color: var(--white-2);
+  text-decoration: none;
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  line-height: 1.4;
+  transition: color var(--transition-1);
+}
+
+.publication-title a:hover {
+  color: var(--orange-yellow-crayola);
+}
+
+.publication-authors {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.publication-details {
+  color: var(--light-gray-50);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+  margin: 0;
+}
+
 /* Download Resume Button */
 .resume-download {
   text-align: center;
@@ -1977,23 +2076,54 @@ textarea.form-input::-webkit-resizer { display: none; }
 .download-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  background: var(--orange-yellow-crayola);
-  color: var(--eerie-black-1);
-  padding: 15px 30px;
-  border-radius: 12px;
-  font-weight: var(--fw-600);
+  gap: 12px;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000000;
+  padding: 18px 35px;
+  border-radius: 15px;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-5);
   text-decoration: none;
-  transition: var(--transition-1);
-  box-shadow: var(--shadow-2);
-  border: 2px solid var(--orange-yellow-crayola);
+  transition: all var(--transition-1);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+  border: 3px solid #ffd700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .download-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-4);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(255, 215, 0, 0.6);
+  background: linear-gradient(135deg, #ffed4e, #ffd700);
+  border-color: #ffed4e;
+}
+
+.download-btn:active {
+  transform: translateY(-2px);
 }
 
 .download-btn ion-icon {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  color: #000000;
+}
+
+/* Responsive Publications */
+@media (max-width: 768px) {
+  .publication-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .publication-item {
+    padding: 20px;
+  }
+  
+  .publication-title a {
+    font-size: var(--fs-6);
+  }
+  
+  .download-btn {
+    padding: 15px 25px;
+    font-size: var(--fs-6);
+  }
 }

@@ -50,13 +50,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Development Activity Stats - Professional display
-function initializeDevelopmentStats() {
-  // Show professional metrics without hardcoded values
-  animateCounter('total-repos', 0);
-  animateCounter('total-commits', 0);
-  animateCounter('total-stars', 0);
-  animateCounter('total-followers', 0);
+// Professional Achievements - Display static values
+function initializeProfessionalAchievements() {
+  // Set static values directly (no animation needed for achievements)
+  const achievements = {
+    'total-repos': '4.0',
+    'total-commits': '3',
+    'total-stars': '4',
+    'total-followers': '4'
+  };
+  
+  Object.entries(achievements).forEach(([elementId, value]) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.textContent = value;
+    }
+  });
 }
 
 function animateCounter(elementId, targetValue) {
@@ -75,9 +84,9 @@ function animateCounter(elementId, targetValue) {
   }, 30);
 }
 
-// Initialize development stats when page loads
+// Initialize professional achievements when page loads
 document.addEventListener('DOMContentLoaded', () => {
-  initializeDevelopmentStats();
+  initializeProfessionalAchievements();
 });
 
 // element toggle function
