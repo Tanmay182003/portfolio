@@ -67,7 +67,7 @@ select.addEventListener("click", function () { elementToggleFunc(this); });
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
+    let selectedValue = this.innerText.toLowerCase().replace(/\s+/g, '');
     selectValue.innerText = this.innerText;
     elementToggleFunc(select);
     filterFunc(selectedValue);
@@ -101,7 +101,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 
   filterBtn[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
+    let selectedValue = this.innerText.toLowerCase().replace(/\s+/g, '');
     selectValue.innerText = this.innerText;
     filterFunc(selectedValue);
 
@@ -145,7 +145,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
     for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+      if (this.innerHTML.toLowerCase().trim() === pages[i].dataset.page.toLowerCase()) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);

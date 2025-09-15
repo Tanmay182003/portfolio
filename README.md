@@ -1,44 +1,75 @@
-# vCard - Personal portfolio
+# Tanmay Singla - Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+![GitHub repo size](https://img.shields.io/github/repo-size/Tanmay182003/portfolio)
+![GitHub stars](https://img.shields.io/github/stars/Tanmay182003/portfolio?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Tanmay182003/portfolio?style=social)
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+A fully responsive personal portfolio website showcasing my work in software security research, embedded systems, and AI/ML development. Built using HTML, CSS, and JavaScript.
 
-## Demo
+## About Me
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+I'm a Software Security Research Assistant and Graduate Student at Purdue University, specializing in Agentic AI security frameworks and software supply chain security. I enjoy turning complex security problems into practical solutions through research and development.
 
-## Prerequisites
+### Education
+- **M.S. in Electrical & Computer Engineering** - Purdue University (Aug 2025 - May 2026) - GPA: 4.0/4.0
+- **B.S. in Computer Engineering** - Purdue University (Aug 2021 - May 2025) - GPA: 3.9/4.0
 
-Before you begin, ensure you have met the following requirements:
+### Research Focus
+- Security frameworks for Agentic AI models
+- Software supply chain security analysis
+- Zero-trust architectures for third-party software
+- Large Language Models for failure analysis
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+### Professional Experience
+- **Software Security Research Assistant** | Duality Lab | Purdue University (May 2023 - Present)
+- **Software Engineering Intern** | Lennox International (Jun 2025 - Aug 2025)
+- **Embedded Software Engineering Intern** | Rheem Manufacturing (May 2024 - Aug 2024)
+- **Hardware Validation & Integration Intern** | Rheem Manufacturing (Aug 2023 - Dec 2023)
 
-## Installing vCard
+## Technical Skills
 
-To install **vCard**, follow these steps:
+### Programming Languages
+Python, C/C++, MATLAB, Verilog, Java, SQL, JavaScript, TypeScript
 
-Linux and macOS:
+### Frameworks & Libraries
+Simulink, Django, ROS, OpenCV, NumPy, PyTorch, Pandas, Scikit-learn
 
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+### Tools & Platforms
+Git, Linux, STM32Cube, TeraTerm, Docker, AWS, Supabase, PostgreSQL, Jupyter
 
-Windows:
+### Hardware Tools
+Altium, LTspice, Fusion 360, QuestaSim, e2 studio, Logic Analyzers, Oscilloscopes
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+## Research Publications
+
+- **Software Supply Chain Failures Analysis Using LLMs** (ACM CCS SCORED'23)
+- **Zero-Trust Architectures for Third-Party Software Security** (ICSE'25)
+- **Software Signing Practices and Adoption Trends** (USENIX Security'25)
+- **Security Framework for Agentic AI Models** (Thesis Research)
+
+## Projects
+
+- **VFS — Software Lead**: Leading software and autonomy team for autonomous flight systems
+- **FAIL: Analyzing Software Failures Using LLMs**: Web platform for visualizing software failure trends
+- **Heating Control Systems**: Modular control algorithms for embedded systems
+- **Software Supply Chain Security Research**: Comprehensive analysis of security vulnerabilities
 
 ## Contact
 
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
+- **Email**: singlat@purdue.edu
+- **Phone**: +1 (765) 771-9582
+- **Location**: West Lafayette, Indiana, USA
+- **LinkedIn**: [linkedin.com/in/tanmay-singla/](https://linkedin.com/in/tanmay-singla/)
+- **GitHub**: [github.com/Tanmay182003](https://github.com/Tanmay182003)
+
+## Live Website
+
+Visit my portfolio at: [https://tanmay182003.github.io/portfolio/](https://tanmay182003.github.io/portfolio/)
 
 ## License
 
-MIT
+MIT License - feel free to use this template for your own portfolio!
+
+---
+
+*This portfolio is based on the vCard template by [codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio)*
