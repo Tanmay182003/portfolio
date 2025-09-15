@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const typingElement = document.querySelector('.typing-text');
   if (typingElement) {
     // Set initial text
-    typingElement.textContent = 'Software Security Research Assistant';
+    typingElement.textContent = 'Software Security Researcher';
     new TypingAnimation(typingElement);
   }
 });
