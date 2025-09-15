@@ -179,12 +179,13 @@ button:hover, a:hover {
 
 .sidebar,
 article {
-  background: var(--eerie-black-2);
+  background: linear-gradient(135deg, var(--eerie-black-2), var(--eerie-black-1));
   border: 1px solid var(--jet);
-  border-radius: 20px;
-  padding: 15px;
-  box-shadow: var(--shadow-1);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  backdrop-filter: blur(10px);
 }
 
 .separator {
@@ -1910,61 +1911,95 @@ textarea.form-input::-webkit-resizer { display: none; }
   51%, 100% { border-color: transparent; }
 }
 
-/* GitHub Stats */
+/* GitHub Stats - Enhanced Professional Design */
 .github-stats {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .github-stats-title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.github-stats-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
 }
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  margin-bottom: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
 }
 
 .stat-card {
-  background: var(--border-gradient-onyx);
-  padding: 20px;
-  border-radius: 16px;
+  background: linear-gradient(135deg, var(--eerie-black-1), var(--jet));
+  padding: 30px 25px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: var(--shadow-4);
-  transition: transform var(--transition-1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all var(--transition-1);
+  border: 1px solid var(--jet);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--text-gradient-yellow);
 }
 
 .stat-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-color: var(--orange-yellow-crayola);
 }
 
 .stat-icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--orange-yellow-crayola);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
 .stat-number {
-  font-size: 2rem;
-  font-weight: var(--fw-600);
+  font-size: 2.5rem;
+  font-weight: var(--fw-700);
   color: var(--white-2);
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .stat-label {
   color: var(--light-gray-70);
-  font-size: var(--fs-7);
+  font-size: var(--fs-6);
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  font-weight: var(--fw-500);
+  letter-spacing: 0.5px;
 }
 
 .stat-subtitle {
   color: var(--orange-yellow-crayola);
-  font-size: var(--fs-8);
-  font-weight: var(--fw-500);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-600);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
 }
 
 .github-link {
@@ -1989,7 +2024,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   box-shadow: var(--shadow-2);
 }
 
-/* Publications List View */
+/* Publications List View - Enhanced Design */
 .publications-list {
   list-style: none;
   padding: 0;
@@ -1997,83 +2032,106 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .publication-item {
-  background: var(--border-gradient-onyx);
-  border-radius: 16px;
-  padding: 25px;
-  margin-bottom: 20px;
-  box-shadow: var(--shadow-4);
-  transition: transform var(--transition-1);
+  background: linear-gradient(135deg, var(--eerie-black-1), var(--jet));
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all var(--transition-1);
+  border: 1px solid var(--jet);
+  position: relative;
+  overflow: hidden;
+}
+
+.publication-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--text-gradient-yellow);
 }
 
 .publication-item:hover {
-  transform: translateY(-3px);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-color: var(--orange-yellow-crayola);
 }
 
 .publication-meta {
   display: flex;
   gap: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
 .publication-venue {
   background: var(--orange-yellow-crayola);
   color: var(--eerie-black-1);
-  padding: 4px 12px;
-  border-radius: 20px;
+  padding: 8px 16px;
+  border-radius: 25px;
   font-size: var(--fs-7);
   font-weight: var(--fw-600);
   text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
 }
 
 .publication-year {
   background: var(--bg-gradient-yellow-2);
   color: var(--white-2);
-  padding: 4px 12px;
-  border-radius: 20px;
+  padding: 8px 16px;
+  border-radius: 25px;
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
+  border: 1px solid var(--orange-yellow-crayola);
 }
 
 .publication-citations {
   background: var(--jet);
   color: var(--light-gray-70);
-  padding: 4px 12px;
-  border-radius: 20px;
+  padding: 8px 16px;
+  border-radius: 25px;
   font-size: var(--fs-7);
   font-weight: var(--fw-400);
+  border: 1px solid var(--light-gray-70);
 }
 
 .publication-title {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .publication-title a {
   color: var(--white-2);
   text-decoration: none;
-  font-size: var(--fs-5);
+  font-size: var(--fs-4);
   font-weight: var(--fw-600);
-  line-height: 1.4;
-  transition: color var(--transition-1);
+  line-height: 1.5;
+  transition: all var(--transition-1);
+  display: block;
 }
 
 .publication-title a:hover {
   color: var(--orange-yellow-crayola);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
 .publication-authors {
   color: var(--light-gray-70);
-  font-size: var(--fs-6);
+  font-size: var(--fs-5);
   font-weight: var(--fw-400);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-style: italic;
+  line-height: 1.4;
 }
 
 .publication-details {
   color: var(--light-gray-50);
-  font-size: var(--fs-7);
+  font-size: var(--fs-6);
   font-weight: var(--fw-300);
   margin: 0;
+  line-height: 1.4;
 }
 
 /* Download Resume Button */
