@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USB Receiver for AHB-Lite SoC - Tanmay Singla</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="project-detail-container">
+    <div class="project-detail-content">
+      <div class="back-button">
+        <a href="index.html" class="back-link">
+          <ion-icon name="arrow-back"></ion-icon>
+          Back to Portfolio
+        </a>
+      </div>
+      
+      <header class="project-header">
+        <h1 class="project-title">Design and Verification of USB Receiver for AHB-Lite SoC</h1>
+        <p class="project-subtitle">Advanced Digital Design Project</p>
+        <div class="project-meta">
+          <span class="project-company">Academic Project</span>
+          <span class="project-duration">Aug 2024 — Dec 2024</span>
+          <span class="project-category">Academic</span>
+        </div>
+      </header>
+
+      <div class="project-image">
+        <img src="./assets/images/project-8.jpg" alt="USB Receiver SoC Design" loading="lazy">
+      </div>
+
+      <section class="project-description">
+        <h2>Project Overview</h2>
+        <p>
+          This project involved designing and verifying a complete USB Receiver module for an AHB-Lite System-on-Chip (SoC). 
+          The implementation focused on creating a robust, modular design that ensures accurate USB 1.1 protocol compliance 
+          and seamless integration with the AHB-Lite bus architecture.
+        </p>
+        
+        <h3>Key Achievements</h3>
+        <ul>
+          <li><strong>Modular Architecture:</strong> Designed 7 modular components for the USB Receiver in an AHB-Lite SoC</li>
+          <li><strong>NRZI Decoding:</strong> Implemented Non-Return-to-Zero Inverted (NRZI) decoding for proper data recovery</li>
+          <li><strong>Bit De-stuffing:</strong> Created bit de-stuffing logic to handle USB protocol requirements</li>
+          <li><strong>Error Detection:</strong> Integrated comprehensive error detection for sync bytes, PID, address, and CRC</li>
+          <li><strong>USB 1.1 Compliance:</strong> Ensured accurate USB 1.1 validation throughout the design</li>
+          <li><strong>Verification Framework:</strong> Created individual and top-level test benches for comprehensive verification</li>
+          <li><strong>End-to-End Testing:</strong> Verified complete communication between USB Receiver and AHB-Lite bus</li>
+        </ul>
+
+        <h3>Technical Implementation</h3>
+        <ul>
+          <li>Developed a hierarchical design approach with 7 distinct modules</li>
+          <li>Implemented USB protocol state machine for proper packet handling</li>
+          <li>Created robust error detection and correction mechanisms</li>
+          <li>Designed efficient data path from USB interface to AHB-Lite bus</li>
+          <li>Built comprehensive test suite covering all USB packet types</li>
+        </ul>
+
+        <h3>Design Components</h3>
+        <ul>
+          <li><strong>NRZI Decoder:</strong> Converts NRZI encoded data to standard digital signals</li>
+          <li><strong>Bit De-stuffer:</strong> Removes stuffed bits according to USB protocol</li>
+          <li><strong>Sync Detector:</strong> Identifies and validates sync patterns</li>
+          <li><strong>PID Parser:</strong> Decodes Packet Identifier fields</li>
+          <li><strong>Address Handler:</strong> Manages USB device addressing</li>
+          <li><strong>CRC Checker:</strong> Validates Cyclic Redundancy Check codes</li>
+          <li><strong>AHB Interface:</strong> Bridges USB data to AHB-Lite bus protocol</li>
+        </ul>
+
+        <h3>Technologies Used</h3>
+        <div class="tech-stack">
+          <span class="tech-tag">Verilog</span>
+          <span class="tech-tag">QuestaSim</span>
+          <span class="tech-tag">USB 1.1 Protocol</span>
+          <span class="tech-tag">AHB-Lite Bus</span>
+          <span class="tech-tag">SystemVerilog</span>
+          <span class="tech-tag">Digital Design</span>
+          <span class="tech-tag">FPGA Verification</span>
+          <span class="tech-tag">Test Bench Design</span>
+        </div>
+
+        <h3>Verification Strategy</h3>
+        <p>
+          The verification approach included both unit-level and system-level testing. Individual test benches were created 
+          for each of the 7 modules to ensure proper functionality, while comprehensive top-level test benches verified 
+          the complete USB-to-AHB communication path. This dual approach ensured robust validation of the entire system.
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
