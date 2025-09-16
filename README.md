@@ -1,9 +1,5 @@
 # Tanmay Singla - Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Tanmay182003/portfolio)
-![GitHub stars](https://img.shields.io/github/stars/Tanmay182003/portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Tanmay182003/portfolio?style=social)
-
 A fully responsive personal portfolio website showcasing my work in software security research, embedded systems, and AI/ML development. Built using HTML, CSS, and JavaScript.
 
 ## About Me
