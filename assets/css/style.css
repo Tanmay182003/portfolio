@@ -976,7 +976,12 @@ main {
 }
 
 .project-img.hardware-single {
-  height: 150px;
+  height: 150px !important;
+}
+
+/* Generic smaller thumbnail for specific cards (e.g., EPICS, Heating) */
+.project-img.small-thumb {
+  height: 150px !important;
 }
 
 .project-img::before {
