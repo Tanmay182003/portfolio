@@ -984,6 +984,11 @@ main {
   height: 150px !important;
 }
 
+/* Slightly taller thumbnail */
+.project-img.tall-thumb {
+  height: 210px !important;
+}
+
 .project-img::before {
   content: "";
   position: absolute;
