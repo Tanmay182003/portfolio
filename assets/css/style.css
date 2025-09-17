@@ -986,7 +986,7 @@ main {
 
 /* Slightly taller thumbnail */
 .project-img.tall-thumb {
-  height: 180px !important;
+  height: 160px !important;
 }
 
 .project-img::before {
